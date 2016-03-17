@@ -38,7 +38,7 @@
     <div class="container">
 
       <div>
-        <h1>Users</h1>
+        <h1>User Posts</h1>
         <table class="table">
           <tr>
             <th>Post Content</th>
