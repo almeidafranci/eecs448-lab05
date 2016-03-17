@@ -41,7 +41,7 @@
         <h1>Users</h1>
         <table class="table">
           <tr>
-            <th>User ID</th>
+            <th>Post Content</th>
           </tr>
           <tr>
             <?php 
