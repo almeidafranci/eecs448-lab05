@@ -5,5 +5,12 @@ if(isset($_POST['delete'])){
 		array_push($idsToDelete, $id);
 	}
 }
-echo implode(", ", $idsToDelete);
+$idsText = implode(", ", $idsToDelete);
+
+include 'conex.php';
+
+$query = "DELETE posts WHERE post_id IN ($idsText)";
+if ($mysqli->query($query)) {
+	echo "IDs of deleted posts: ".$idsText;
+}
 ?>
