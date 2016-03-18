@@ -1,5 +1,5 @@
 <?php 
-$idsToDelete;
+$idsToDelete = array();
 if(isset($_POST['delete'])){
 	for ($i=0; $i < count($_POST['delete']); $i++) { 
 		if ($_POST['delete'][$i]=="on") {
