@@ -43,7 +43,6 @@
           <tr>
             <th>Post Content</th>
           </tr>
-          <tr>
             <?php 
               $id = $_POST['user_id'];
               include 'conex.php';
@@ -53,7 +52,7 @@
 
                   /* fetch associative array */
                   while ($row = $result->fetch_assoc()) {
-                      echo '<td>'.$row["content"].'</td>';
+                      echo '<tr><td>'.$row["content"].'</td></tr>';
                   }
 
                   /* free result set */
@@ -63,7 +62,6 @@
               /* close connection */
               $mysqli->close();
             ?>
-          </tr>
         </table>
       </div>
 
