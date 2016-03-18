@@ -9,7 +9,7 @@ $idsText = implode(", ", $idsToDelete);
 
 include 'conex.php';
 
-$query = "DELETE posts WHERE post_id IN ($idsText)";
+$query = "DELETE FROM posts WHERE post_id IN ($idsText)";
 if ($mysqli->query($query)) {
 	echo "IDs of deleted posts: ".$idsText;
 }
