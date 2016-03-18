@@ -54,7 +54,7 @@
 
                     /* fetch associative array */
                     while ($row = $result->fetch_assoc()) {
-                        echo '<tr><td><input type="checkbox" name="delete[]"><input type="hidden" name="id[]" value="'.$row["post_id"].'"></td>';
+                        echo '<tr><td><input type="checkbox" name="delete[]" value="'.$row["post_id"].'"></td>';
                         echo '<td>'.$row["author_id"].'</td>';
                         echo '<td>'.$row["content"].'</td></tr>';
                     }

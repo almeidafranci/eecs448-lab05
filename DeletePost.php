@@ -1,10 +1,8 @@
 <?php 
 $idsToDelete = array();
 if(isset($_POST['delete'])){
-	for ($i=0; $i < count($_POST['delete']); $i++) { 
-		if ($_POST['delete'][$i]=="on") {
-			array_push($idsToDelete, $_POST['id'][$i]);
-		}
+	foreach ($_POST['delete'] as $id) {
+		array_push($idsToDelete, $id);
 	}
 }
 echo implode(", ", $idsToDelete);
